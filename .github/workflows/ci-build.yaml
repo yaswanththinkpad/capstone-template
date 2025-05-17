@@ -41,7 +41,7 @@ jobs:
         flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
     
     - name: unit tests
-      run: nosetests --with-spec --spec-color --with-coverage --coverage-package=service
+      run: nosetests --with-spec --spec-color --with-coverage --cover-package=service
       env:
         POSTGRES_URI: "postgresql://postgrespgs3cr3t@postgres:5432/testdb"
       
