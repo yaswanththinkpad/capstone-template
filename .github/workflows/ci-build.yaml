@@ -28,6 +28,13 @@ jobs:
           --health-retries 3
         
     steps:
+    - name: Wait for DB
+      run: |
+        until pg_isready -h postgres -p 5432 -U postgres; do
+        echo "Waiting for postgres..."
+        sleep 2
+        done
+        
     - name: checkout
       uses: actions/checkout@v2
     
