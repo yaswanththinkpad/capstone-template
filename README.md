@@ -11,6 +11,8 @@ You should use this template to start your DevOps Capstone project. It contains 
 
 Do Not fork this code! It is meant to be used by pressing the  <span style=color:white;background:green>**Use this Template**</span> button in GitHub. This will copy the code to your own repository with no connection back to the original repository like a fork would. This is what you want.
 
+![Build Status](https://github.com/yaswanththinkpad/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
+
 ## Development Environment
 
 These labs are designed to be executed in the IBM Developer Skills Network Cloud IDE with OpenShift. Please use the links provided in the Coursera Capstone project to access the lab environment.
