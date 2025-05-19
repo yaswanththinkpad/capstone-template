@@ -13,16 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     container: python:3.9-slim   
     steps:
-    - name: Install PostgreSQL client
-      run: apt-get update && apt-get install -y postgresql-client
-
-    - name: Wait for DB
-      run: |
-        until pg_isready -h postgres -p 5432 -U postgres; do
-        echo "Waiting for postgres..."
-        sleep 2
-        done
-
     - name: checkout
       uses: actions/checkout@v2
     
